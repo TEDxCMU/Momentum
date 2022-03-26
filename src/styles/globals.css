@@ -1,6 +1,9 @@
 :root {
     --c-black: rgb(0, 0, 0);
     --c-white: rgb(255, 255, 255);
+
+    /* schedule css */
+    --eventbox-height: 500px;
 }
 
 *, *::before, *::after {

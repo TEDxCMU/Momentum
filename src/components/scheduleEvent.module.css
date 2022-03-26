@@ -1,0 +1,39 @@
+.event {
+  margin-bottom: 50px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.eventTime {
+  font-size: 1.7em;
+  margin-bottom: 10px;
+}
+
+.eventBox {
+  height: var(--eventbox-height);
+  border: 1px solid var(--c-white);
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.eventBox .eventTitle {
+  font-size: 6em;
+  padding: 20px;
+  border-bottom: 1px solid var(--c-white);
+}
+
+.eventBox .eventTitle p {
+  width: 60%;
+}
+
+.eventBox .eventDesc {
+  width: 60%;
+  font-size: 1.7em;
+  padding: 20px;
+}
+
+.eventBox img {
+  height: var(--eventbox-height);
+  object-fit: cover;
+  border-left: 1px solid var(--c-white);
+}
