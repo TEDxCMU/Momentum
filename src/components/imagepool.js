@@ -8,11 +8,31 @@ function ImagePool() {
                 <div className={styles.row}>
                     <div className={styles.images}>
                         <img
-                            className={styles.img}
-                            src={"/visuals/organic-1.svg"}
+                            className={styles.final1}
+                            src={"/visuals/final-1.svg"}
                         >
                         </img>
                         <img
+                            className={styles.final2}
+                            src={"/visuals/final-2.svg"}
+                        >
+                        </img>
+                        <img
+                            className={styles.final3}
+                            src={"/visuals/final-3.svg"}
+                        >
+                        </img>
+                        <img
+                            className={styles.final4}
+                            src={"/visuals/final-4.svg"}
+                        >
+                        </img>
+                        <img
+                            className={styles.final5}
+                            src={"/visuals/final-5.svg"}
+                        >
+                        </img>
+                        {/* <img
                             className={styles.img}
                             src={"/visuals/organic-2.svg"}
                         >
@@ -106,7 +126,7 @@ function ImagePool() {
                             className={styles.img}
                             src={"/visuals/organic-20.svg"}
                         >
-                        </img>
+                        </img> */}
                     </div>
                 </div>
             </div>

@@ -15,6 +15,12 @@ function Home() {
                     <div className={styles.heading}>
                         <h1>momentum</h1>
                     </div>
+                    <div className={styles.time}>
+                        <h2>April 2, 10 am EST</h2>
+                    </div>
+                    <div className={styles.location}>
+                        <h3>Location: Mellon Institute</h3>
+                    </div>
                     {/* <div className={styles.content}> */}
                     <div className={styles.images}>
                         <ImagePool/>
