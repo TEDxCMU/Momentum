@@ -33,6 +33,13 @@ a:hover {
     opacity: 0.5;
 }
 
+@font-face {
+    font-family: "PPHatton-Light";
+    src: local("PPHatton-Light"),
+      url("../fonts/PPHatton-Light.woff") format("woff");
+    font-weight: normal;
+  }
+
 @media screen and (max-width: 812px) {
     html {
         font-size: 50%;
