@@ -96,11 +96,6 @@
 }
 
 @media (max-width: 767px) {
-  /* .img {
-    left: 50%;
-    margin-right: 50px;
-    margin-left: 50px;
-  } */
 
   .images {
     flex-direction: column;
