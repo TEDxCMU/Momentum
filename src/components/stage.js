@@ -1,5 +1,6 @@
 import cn from 'classnames';
 import styles from 'components/stage.module.css';
+import Schedule from 'components/schedule';
 
 function Stage() {
     return (
@@ -22,6 +23,7 @@ function Stage() {
                 <h2 className={styles.heading}>
                     Main Stage
                 </h2>
+                <Schedule sidebar />
             </section>
         </main>
     );

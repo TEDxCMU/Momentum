@@ -1,0 +1,98 @@
+.container {
+    margin-bottom: 3.3rem;
+}
+
+.time {
+    font-size: 1.7em;
+    margin-bottom: 10px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    border: 0.1rem solid var(--c-white);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.cardContent {
+    grid-column: span 8;
+}
+
+.sidebarCardContent {
+    grid-column: 1 / -1;
+}
+
+.cardTitle {
+    font-family: PPHatton;
+    font-weight: 500;
+    font-size: 3.6rem;
+    padding: 2rem;
+}
+
+.sidebarCardTitle {
+    font-size: 2.6rem;
+}
+
+.cardTitle:not(:last-child) {
+    border-bottom: 0.1rem solid var(--c-white);
+}
+
+.cardImage {
+    grid-column: span 4;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-left: 0.1rem solid var(--c-white);
+}
+
+.cardDescription {
+    max-width: 60%;
+    padding: 2rem;
+    padding-top: 0;
+    font-size: 1.6rem;
+    color: var(--c-off-white-2);
+}
+
+.sidebarCardDescription {
+    max-width: 100%;
+}
+
+.speaker {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1.8rem;
+}
+
+.speakerImage {
+    width: 4.6rem;
+    height: 4.6rem;
+    margin-right: 0.8rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.speakerName {
+    color: var(--c-gray-3);
+    text-transform: uppercase;
+}
+
+.speakerTitle {
+    color: var(--c-gray-3);
+}
+
+@media (max-width: 812px) {
+    .cardContent {
+        grid-column: 1 / -1;
+    }
+
+    .cardImage {
+        display: none;
+    }
+
+    .cardDescription {
+        max-width: 100%;
+    }
+}
