@@ -25,7 +25,7 @@ function ScheduleEvent({ event }) {
       <p className={styles.eventTime}>{formatDate(event.data.time)}</p>
       <div className={cn(styles.eventBox, { [styles.eventBoxSmall]: !!!(event.data.image.url) })}>
 
-        <div className={styles.eventText}>
+        <div className={cn(styles.eventText, { [styles.eventTextSmall]: !!!(event.data.image.url) })}>
 
           <div className={cn(styles.eventTitle, { [styles.eventTitleSmall]: !!!(event.data.image.url) })}>
             <p>{event.data.title}</p>

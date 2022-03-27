@@ -25,6 +25,10 @@
   border-right: 1px solid var(--c-white);
 }
 
+.eventTextSmall {
+  border-right: none;
+}
+
 .eventBox .eventTitle {
   font-size: 5em;
   padding: 30px;
@@ -32,7 +36,7 @@
 }
 
 .eventTitleSmall {
-  border-bottom: none;
+  border-bottom: none !important;
 }
 
 .eventBox .eventTitle p {
