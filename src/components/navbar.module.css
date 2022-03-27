@@ -4,6 +4,9 @@
     align-items: center;
     padding: 2rem;
     border-bottom: 0.1rem solid var(--c-white);
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4rem);
+    z-index: 1;
 }
 
 .logo {

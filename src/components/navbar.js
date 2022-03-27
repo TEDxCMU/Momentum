@@ -5,7 +5,11 @@ import Logo from 'assets/tedxcmu-logo.svg';
 function NavBar() {
     return (
         <nav className={styles.container}>
-            <Logo className={styles.logo} />
+            <Link href="https://tedxcmu.org/">
+                <a target="_blank" rel="noopener noreferrer">
+                    <Logo className={styles.logo} />
+                </a>
+            </Link>
             <div className={styles.links}>
                 <Link href="/">
                     <a className={styles.link}>
