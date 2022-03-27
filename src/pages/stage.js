@@ -1,6 +1,8 @@
+import StageC from 'components/stage';
+
 function Stage() {
     return (
-        <div>Stage</div>
+        <StageC />
     );
 }
 
