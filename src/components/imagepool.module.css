@@ -32,10 +32,6 @@
   margin-right: 24px;
 }
 
-.container:last-child {
-  padding-right: 60px;
-}
-
 @media (min-width: 500px) {
   .row {
     margin: 0 var(--space-2x) 0 0;
