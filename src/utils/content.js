@@ -5,14 +5,25 @@ const accessToken = 'MC5Zall3NVJFQUFDRUFKQVRr.agjvv73vv71XUu-_ve-_ve-_vWDvv71977
 const endpoint = prismic.getEndpoint('tedxcmu-momentum');
 const client = prismic.createClient(endpoint, { accessToken });
 
-export async function getSchedule() {
-    return client.getAllByType('event');
-}
-
 export async function getSpeakers() {
     return client.getAllByType('speaker');
 }
 
 export async function getInnovators() {
     return client.getAllByType('innovator');
+}
+
+export async function getSchedule() {
+    const events = await client.getAllByType('event');
+    const speakers = await getSpeakers();
+
+    for (const event of events) {
+        if (event.data && event.data.speaker && event.data.speaker.id) {
+            const id = event.data.speaker.id;
+            const speaker = speakers.find((s) => s.id === id);
+            event.data.speaker = speaker;
+        }
+    }
+
+    return events;
 }

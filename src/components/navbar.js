@@ -32,6 +32,11 @@ function NavBar() {
                         Innovation Expo
                     </a>
                 </Link>
+                <Link href="/about">
+                    <a className={styles.link}>
+                        About
+                    </a>
+                </Link>
             </div>
             {/* Empty div for spacing. */}
             <div />

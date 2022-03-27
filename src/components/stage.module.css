@@ -1,0 +1,55 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    min-height: 92vh;
+}
+
+.leftPanel {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 9;
+}
+
+.rightPanel {
+    grid-column: span 3;
+    border: 0.1rem solid var(--c-white);
+}
+
+.heading {
+    margin: 2.5rem 0;
+    font-family: PPHatton;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--c-off-white);
+}
+
+.inline {
+    display: inline-block;
+    text-align: left;
+    margin-left: 2.5rem;
+}
+
+.stream {
+    height: 100%;
+    border: 1rem solid var(--c-gray);
+}
+
+@media screen and (max-width: 812px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inline {
+        display: none;
+    }
+
+    .stream {
+        min-height: 40vh;
+    }
+
+    .rightPanel {
+        min-height: 53vh;
+    }
+}
