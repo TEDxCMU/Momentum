@@ -22,14 +22,16 @@
 }
 
 .eventBox .eventTitle {
-  font-size: 6em;
+  font-size: 5em;
   padding: 30px;
   border-bottom: 1px solid var(--c-white);
 }
 
 .eventBox .eventTitle p {
-  width: 9em;
-  font-family: 'P P Hatton', sans-serif;
+  width: 12em;
+  line-height: 1em;
+  font-family: PPHatton, sans-serif;
+  text-transform: uppercase;
 }
 
 .eventSpeaker {
