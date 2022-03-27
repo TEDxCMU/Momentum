@@ -50,7 +50,9 @@ function ScheduleEvent({ event }) {
           }
         </div>
         {event.data.image.url && (
-          <img className={styles['schedule-img']} src={event.data.image.url} />
+          /*<div className={styles['schedule-img-wrapper']}>*/
+            <img className={styles['schedule-img']} src={event.data.image.url} />
+          /*</div>*/
         )} 
       </div>
     </div>

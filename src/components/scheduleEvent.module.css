@@ -9,7 +9,7 @@
 }
 
 .eventBox {
-  min-height: 50em;
+  /*min-height: 50em;*/
   border: 1px solid var(--c-white);
   border-radius: 10px;
   display: flex;
@@ -23,6 +23,7 @@
 .eventText {
   width: 100em;
   border-right: 1px solid var(--c-white);
+  flex-grow: 1;
 }
 
 .eventTextSmall {
@@ -30,8 +31,8 @@
 }
 
 .eventBox .eventTitle {
-  font-size: 5em;
-  padding: 30px;
+  font-size: 3.5em;
+  padding: 30px 30px 20px 30px;
   border-bottom: 1px solid var(--c-white);
 }
 
@@ -40,7 +41,7 @@
 }
 
 .eventBox .eventTitle p {
-  width: 12em;
+  width: 14em;
   line-height: 1em;
   font-family: PPHatton, sans-serif;
   text-transform: uppercase;
@@ -49,7 +50,7 @@
 .eventSpeaker {
   padding-left: 30px;
   padding-top: 30px;
-  font-size: 1.7em;
+  font-size: 1.5em;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -60,6 +61,7 @@
   width: 3.5em;
   height: 3.5em;
   margin-right: 20px;
+  align-items: center;
 }
 
 .speakerImgWrapper img {
@@ -71,25 +73,33 @@
 
 .speaker-name {
   color: var(--c-gray-3);
-  font-size: 1.2em;
+  text-transform: uppercase;
 }
 
 .speaker-title {
   color: var(--c-gray-3);
-  font-size: 1em;
 }
 
 .eventBox .eventDesc {
-  width: 32em;
-  font-size: 1.7em;
-  padding: 30px;
+  width: 35em;
+  font-size: 1.6em;
+  line-height: 1.2em;
+  padding: 30px 30px 40px 30px;
 }
+
+/*
+.schedule-img-wrapper {
+  padding: 2rem;
+}
+*/
 
 .schedule-img {
   max-width: 50em;
   min-width: 0px;
   object-fit: contain;
+  z-index: -1;
 }
+
 
 @media (max-width: 767px) {
    .schedule-img {
