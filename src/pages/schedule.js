@@ -13,7 +13,6 @@ function Schedule() {
 
     async function init() {
         const content = await getSchedule();
-        console.log(content);
         setData(content);
     }
 

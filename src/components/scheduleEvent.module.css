@@ -16,6 +16,10 @@
   flex-flow: row nowrap;
 }
 
+.eventBoxSmall {
+  min-height: auto;
+}
+
 .eventText {
   width: 100em;
   border-right: 1px solid var(--c-white);
@@ -25,6 +29,10 @@
   font-size: 5em;
   padding: 30px;
   border-bottom: 1px solid var(--c-white);
+}
+
+.eventTitleSmall {
+  border-bottom: none;
 }
 
 .eventBox .eventTitle p {

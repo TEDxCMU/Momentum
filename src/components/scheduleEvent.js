@@ -1,7 +1,6 @@
 import styles from 'components/scheduleEvent.module.css';
+import cn from 'classnames';
 import { parseISO, format } from "date-fns";
-//import schedulePlaceholder from 'assets/schedulePlaceholder.png';
-//import speakerPlaceholder from 'assets/scheduleSpeakerPlaceholder.jpeg';
 import logo from 'assets/tedxcmu-logo.svg';
 
 const formatDate = (date) => {
@@ -12,7 +11,7 @@ const formatDate = (date) => {
   return format(parseISO(date), "h:mmaaaaa'm'");
 };
 
-function ScheduleEvent({event}) {
+function ScheduleEvent({ event }) {
   return (
     // event should have:
     // photo
@@ -24,11 +23,11 @@ function ScheduleEvent({event}) {
     // image?
     <div className={styles.event}>
       <p className={styles.eventTime}>{formatDate(event.data.time)}</p>
-      <div className={styles.eventBox}>
+      <div className={cn(styles.eventBox, { [styles.eventBoxSmall]: !!!(event.data.image.url) })}>
 
         <div className={styles.eventText}>
 
-          <div className={styles.eventTitle}>
+          <div className={cn(styles.eventTitle, { [styles.eventTitleSmall]: !!!(event.data.image.url) })}>
             <p>{event.data.title}</p>
           </div>
           {
@@ -36,8 +35,7 @@ function ScheduleEvent({event}) {
               <div className={styles.eventSpeaker}>
                 <div className={styles.speakerImgWrapper}>
 
-                  <img src={event.data.speaker.data.image || "tedxcmu-logo.svg"}></img>
-                  {console.log(event.data.speaker)}
+                  <img src={event.data.speaker.data.image.url || "tedxcmu-logo.svg"}></img>
                 </div>
                 <div>
                   <p className={styles["speaker-name"]}>{event.data.speaker.data.name}</p>
@@ -46,15 +44,14 @@ function ScheduleEvent({event}) {
               </div>
             )
           }
-
           {
             event.data.description != null &&
             (<p className={styles.eventDesc}>{event.data.description}</p>)
           }
         </div>
-        <img className={styles['schedule-img']} src={event.data.image.url || "tedxcmu-logo.svg"}></img>       
-        
-
+        {event.data.image.url && (
+          <img className={styles['schedule-img']} src={event.data.image.url} />
+        )} 
       </div>
     </div>
   )
