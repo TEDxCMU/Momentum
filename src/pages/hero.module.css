@@ -78,7 +78,8 @@
   .heading {
     z-index: 1;
     position: absolute;
-    transform: translateY(420%);
+    bottom: 4rem;
+    /* transform: translateY(420%); */
     font-family: "PPHatton-Light";
     font-weight: 400;
     font-size: 150px;

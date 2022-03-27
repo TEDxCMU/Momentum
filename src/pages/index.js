@@ -2,11 +2,6 @@
 import styles from "./hero.module.css"
 import ImagePool from "../components/imagepool"
 
-// const images = importAll(require.context('static/UniLogo/', false, /\.(png|jpe?g|svg)$/)); 
-// const imageArray = images.map(function(image) {
-//     return <img key={image} src={image} />;
-// });
-
 function Home() {
     return (
         <>

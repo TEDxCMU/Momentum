@@ -87,12 +87,6 @@
     margin-left: -10%;
     transform: translateY(-10%);
   }
-  /* .images {
-    width: 150px;
-    height: 700px;
-    flex-direction: row;
-    margin-top: 0;
-  } */
 }
 
 @media (max-width: 767px) {
