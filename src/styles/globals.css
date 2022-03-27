@@ -1,3 +1,35 @@
+@font-face {
+    font-family: PPHatton;
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url("/PPHatton/PPHatton-Ultralight.otf") format("opentype");
+}
+
+@font-face {
+    font-family: PPHatton;
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("/PPHatton/PPHatton-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: PPHatton;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("/PPHatton/PPHatton-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: PPHatton;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("/PPHatton/PPHatton-Bold.otf") format("opentype");
+}
+
 :root {
     --c-black: rgb(0, 0, 0);
     --c-white: rgb(255, 255, 255);
