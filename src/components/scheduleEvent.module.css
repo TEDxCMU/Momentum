@@ -9,31 +9,89 @@
 }
 
 .eventBox {
-  height: var(--eventbox-height);
+  min-height: 50em;
   border: 1px solid var(--c-white);
   border-radius: 10px;
   display: flex;
   flex-flow: row nowrap;
 }
 
+.eventText {
+  width: 100em;
+  border-right: 1px solid var(--c-white);
+}
+
 .eventBox .eventTitle {
   font-size: 6em;
-  padding: 20px;
+  padding: 30px;
   border-bottom: 1px solid var(--c-white);
 }
 
 .eventBox .eventTitle p {
-  width: 60%;
+  width: 9em;
+  font-family: 'P P Hatton', sans-serif;
+}
+
+.eventSpeaker {
+  padding-left: 30px;
+  padding-top: 30px;
+  font-size: 1.7em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.speakerImgWrapper {
+  width: 3.5em;
+  height: 3.5em;
+  margin-right: 20px;
+}
+
+.speakerImgWrapper img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.speaker-name {
+  color: var(--c-gray);
+  font-size: 1.2em;
+}
+
+.speaker-title {
+  color: var(--c-gray);
+  font-size: 1em;
 }
 
 .eventBox .eventDesc {
-  width: 60%;
+  width: 32em;
   font-size: 1.7em;
-  padding: 20px;
+  padding: 30px;
 }
 
-.eventBox img {
-  height: var(--eventbox-height);
-  object-fit: cover;
-  border-left: 1px solid var(--c-white);
+.schedule-img {
+  max-width: 50em;
+  min-width: 0px;
+  object-fit: contain;
+}
+
+@media (max-width: 767px) {
+   .schedule-img {
+     display: none;
+   }
+
+   .eventText {
+     border: none;
+   }
+
+   .eventTitle p {
+    width: 100% !important;
+    font-size: 0.8em;
+   }
+
+   .eventDesc {
+     width: 100% !important;
+   }
 }

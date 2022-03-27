@@ -1,6 +1,7 @@
 import styles from 'components/scheduleEvent.module.css';
 import { parseISO, format } from "date-fns";
 import schedulePlaceholder from 'assets/schedulePlaceholder.png'
+import speakerPlaceholder from 'assets/scheduleSpeakerPlaceholder.jpeg'
 
 const formatDate = (date) => {
   // https://github.com/date-fns/date-fns/issues/946
@@ -22,16 +23,27 @@ function ScheduleEvent({event}) {
       <div className={styles.eventBox}>
 
         <div className={styles.eventText}>
+
           <div className={styles.eventTitle}>
             <p>{event.data.title}</p>
           </div>
+
+          <div className={styles.eventSpeaker}>
+            <div className={styles.speakerImgWrapper}>
+              <img src={speakerPlaceholder.src}></img>
+            </div>
+            <div>
+              <p className={styles["speaker-name"]}>{event.data.speaker.data.name}</p>
+              <p className={styles["speaker-title"]}>{event.data.speaker.data.title}</p>
+            </div>
+          </div>
+
           <p className={styles.eventDesc}>{event.data.description}</p>
-          {/*<p>{event.data.speaker}</p>  not sure how to get speaker data */}
         </div>
         
-        <div>
-          <img src={schedulePlaceholder.src}></img> {/* is there an img for this? */}
-        </div>
+        
+        <img className={styles['schedule-img']} src={schedulePlaceholder.src}></img> {/* is there an img for this? */}
+        
 
       </div>
     </div>
