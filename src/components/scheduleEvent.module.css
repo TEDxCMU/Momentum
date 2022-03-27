@@ -56,12 +56,12 @@
 }
 
 .speaker-name {
-  color: var(--c-gray);
+  color: var(--c-gray-3);
   font-size: 1.2em;
 }
 
 .speaker-title {
-  color: var(--c-gray);
+  color: var(--c-gray-3);
   font-size: 1em;
 }
 
