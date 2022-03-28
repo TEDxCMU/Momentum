@@ -59,7 +59,7 @@
 .card:hover,
 .card:focus {
   border: 0.7px solid white;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .cardBody {

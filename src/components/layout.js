@@ -1,7 +1,7 @@
 import cn from "classnames";
-import styles from "components/page.module.css";
+import styles from "components/Layout.module.css";
 
-function Page({ children, title = "" }) {
+function Layout({ children, title = "" }) {
   return (
     <div>
       <div className={cn(styles.centerAlignment, styles.header)}>{title}</div>
@@ -10,4 +10,4 @@ function Page({ children, title = "" }) {
   );
 }
 
-export default Page;
+export default Layout;
