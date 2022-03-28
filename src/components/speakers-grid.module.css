@@ -52,11 +52,14 @@
   border-radius: var(--space-2x);
   border: 1px solid #333333;
   transition: border 0.3s;
+  position: relative;
+  background-color: var(--c-off-black);
 }
 
 .card:hover,
 .card:focus {
   border: 0.7px solid white;
+  opacity: 0.9;
 }
 
 .cardBody {
@@ -69,8 +72,22 @@
 }
 
 .imageWrapper {
-  height: 45vh;
+  height: 23vw;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .imageWrapper {
+    height: 40vw;
+    position: relative;
+  }
+}
+
+@media (max-width: 471px) {
+  .imageWrapper {
+    height: 80vw;
+    position: relative;
+  }
 }
 
 .image {
@@ -79,7 +96,7 @@
   object-fit: cover;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 @media (max-width: 471px) {
@@ -115,12 +132,15 @@
   line-height: 1.3em;
   color: var(--c-gray-3);
   font-weight: 400;
+  padding-bottom: var(--space-12x);
 }
 
 .index {
   font-family: "PPHatton";
-  font-weight: medium;
+  font-weight: 500;
   font-size: 20px;
   float: right;
-  padding-top: var(--space-6x);
+  position: absolute;
+  bottom: var(--space-6x);
+  right: var(--space-6x);
 }
