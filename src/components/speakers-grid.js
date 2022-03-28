@@ -20,7 +20,7 @@ import styles from "./speakers-grid.module.css";
 export default function SpeakersGrid({ speakers }) {
   return (
     <div className={styles.grid}>
-      {speakers?.map((speaker) => (
+      {speakers?.map((speaker, index) => (
         <Link key={speaker.name} href={`/speakers/${speaker.slug}`}>
           <a role="button" tabIndex={0} className={styles.card}>
             <div className={styles.imageWrapper}>
@@ -37,6 +37,7 @@ export default function SpeakersGrid({ speakers }) {
               <div>
                 <h2 className={styles.name}>{speaker.name}</h2>
                 <p className={styles.tagline}>{speaker.title}</p>
+                <p className={styles.index}>{`0${index + 1}`}</p>
               </div>
             </div>
           </a>
