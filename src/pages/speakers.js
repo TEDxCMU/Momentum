@@ -18,7 +18,7 @@ function Speakers() {
   }
 
   return (
-    <Page>
+    <Page title="speakers">
       <SpeakersGrid speakers={data} />
     </Page>
   );

@@ -1,85 +1,99 @@
 @font-face {
-    font-family: PPHatton;
-    font-style: normal;
-    font-weight: 200;
-    font-display: swap;
-    src: url("/PPHatton/PPHatton-Ultralight.otf") format("opentype");
+  font-family: PPHatton;
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/PPHatton/PPHatton-Ultralight.otf") format("opentype");
 }
 
 @font-face {
-    font-family: PPHatton;
-    font-style: normal;
-    font-weight: 300;
-    font-display: swap;
-    src: url("/PPHatton/PPHatton-Light.otf") format("opentype");
+  font-family: PPHatton;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/PPHatton/PPHatton-Light.otf") format("opentype");
 }
 
 @font-face {
-    font-family: PPHatton;
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url("/PPHatton/PPHatton-Medium.otf") format("opentype");
+  font-family: PPHatton;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/PPHatton/PPHatton-Medium.otf") format("opentype");
 }
 
 @font-face {
-    font-family: PPHatton;
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url("/PPHatton/PPHatton-Bold.otf") format("opentype");
+  font-family: PPHatton;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/PPHatton/PPHatton-Bold.otf") format("opentype");
 }
 
 :root {
-    --c-black: rgb(0, 0, 0);
-    --c-white: rgb(255, 255, 255);
-    --c-off-white: #C4C4C4;
-    --c-gray: #474747;
-    --c-gray-3: #828282;
+  --c-black: rgb(0, 0, 0);
+  --c-white: rgb(255, 255, 255);
+  --c-off-white: #c4c4c4;
+  --c-gray: #474747;
+  --c-gray-2: #cecece;
+  --c-gray-3: #828282;
 
-    /* schedule css */
-    --eventbox-height: 500px;
+  /* schedule css */
+  --eventbox-height: 500px;
+
+  --space: 4px;
+  --space-2x: 8px;
+  --space-3x: 12px;
+  --space-4x: 16px;
+  --space-6x: 24px;
+  --space-8x: 32px;
+  --space-12x: 48px;
+  --space-16x: 64px;
+  --space-32x: 128px;
 }
 
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    font-weight: 400;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-weight: 400;
 }
 
 html {
-    font-family: Helvetica, sans-serif;
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+  font-family: Helvetica, sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
-body, #__next {
-    box-sizing: border-box;
-    background-color: var(--c-black);
-    color: var(--c-white);
+body,
+#__next {
+  box-sizing: border-box;
+  background-color: var(--c-black);
+  color: var(--c-white);
 }
 
 a {
-    font-weight: inherit;
-    color: inherit;
-    text-decoration: none;
-    transition: opacity 0.3s;
+  font-weight: inherit;
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.3s;
 }
 
 a:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 @font-face {
-    font-family: "PPHatton-Light";
-    src: local("PPHatton-Light"),
-      url("../fonts/PPHatton-Light.woff") format("woff");
-    font-weight: normal;
-  }
+  font-family: "PPHatton-Light";
+  src: local("PPHatton-Light"),
+    url("../fonts/PPHatton-Light.woff") format("woff");
+  font-weight: normal;
+}
 
 @media screen and (max-width: 812px) {
-    html {
-        font-size: 50%;
-    }
+  html {
+    font-size: 50%;
+  }
 }
