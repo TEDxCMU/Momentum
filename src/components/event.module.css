@@ -10,7 +10,7 @@
 .card {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    border: 0.1rem solid var(--c-white);
+    border: 0.1rem solid var(--c-off-white-2);
     border-radius: 1rem;
     overflow: hidden;
 }
@@ -27,7 +27,9 @@
     font-family: PPHatton;
     font-weight: 500;
     font-size: 3.6rem;
-    padding: 2rem;
+    padding: 2rem 2rem 1.8rem 2rem;
+    color: var(--c-off-white-2);
+    opacity: 90%;
 }
 
 .sidebarCardTitle {
@@ -35,7 +37,7 @@
 }
 
 .cardTitle:not(:last-child) {
-    border-bottom: 0.1rem solid var(--c-white);
+    border-bottom: 0.1rem solid var(--c-off-white-2);
 }
 
 .cardImage {
@@ -48,10 +50,11 @@
 
 .cardDescription {
     max-width: 60%;
-    padding: 2rem;
+    padding: 2rem 3rem 3rem 3rem;
     padding-top: 0;
     font-size: 1.6rem;
     color: var(--c-off-white-2);
+    opacity: 90%;
 }
 
 .sidebarCardDescription {
@@ -62,7 +65,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 3rem 2rem 3rem;
     font-size: 1.8rem;
 }
 
