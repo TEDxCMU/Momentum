@@ -15,7 +15,6 @@ function Expo({ sidebar }) {
     async function init() {
         const content = await getInnovators();
         setData(content)
-        console.log (content)
     }
 
     return (

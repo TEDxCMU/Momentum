@@ -1,16 +1,21 @@
+import { useRef } from 'react';
 import Link from 'next/link';
+import Menu from 'components/menu';
 import styles from 'components/navbar.module.css';
 import Logo from 'assets/tedxcmu-logo.svg';
 
 function NavBar() {
+    const parentRef = useRef(null);
+    const itemsRef = useRef(null);
+
     return (
-        <nav className={styles.container}>
-            <Link href="https://tedxcmu.org/">
-                <a target="_blank" rel="noopener noreferrer">
+        <nav ref={parentRef} className={styles.container}>
+            <Link href="/">
+                <a>
                     <Logo className={styles.logo} />
                 </a>
             </Link>
-            <div className={styles.links}>
+            <div ref={itemsRef} className={styles.links}>
                 <Link href="/">
                     <a className={styles.link}>
                         Home
@@ -42,8 +47,7 @@ function NavBar() {
                     </a>
                 </Link>
             </div>
-            {/* Empty div for spacing. */}
-            <div />
+            <Menu parent={parentRef} items={itemsRef} />
         </nav>
     );
 }

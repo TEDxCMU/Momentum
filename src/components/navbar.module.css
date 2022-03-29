@@ -3,11 +3,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 0;
     padding: 2rem 6.7rem;
     border-bottom: 0.1rem solid var(--c-white);
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(4rem);
     z-index: 1;
+    transition: min-height 0.3s;
 }
 
 .logo {
