@@ -3,10 +3,10 @@ import cn from 'classnames';
 import { parseISO } from 'date-fns';
 import { getInnovators } from 'utils/content';
 import Background from 'components/background';
-import Event from 'components/expoEvent';
+import Innovator from 'components/innovator';
 import styles from 'components/schedule.module.css';
 
-function Expo({ sidebar }) {
+function Expo() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
@@ -25,13 +25,7 @@ function Expo({ sidebar }) {
                 <h1 className={styles.header}>
                     Innovation Expo
                 </h1>
-                {data.map((event) => (
-                    <Event
-                        key={event.id}
-                        event={event.data}
-                        sidebar={false}
-                    />
-                ))}
+                {data.map((event) => <Innovator key={event.id} event={event.data} />)}
             </main>
         </>
     );

@@ -1,10 +1,12 @@
+import Link from 'next/link';
 import cn from 'classnames';
 import { parseISO, format } from 'date-fns';
 import eventStyles from 'components/event.module.css';
-import styles from 'components/expoEvent.module.css';
+import styles from 'components/innovator.module.css';
 import logo from 'assets/tedxcmu-logo.svg';
 
-function InnovationEvent({ event , sidebar}) {
+function Innovator({ event }) {
+    console.log(event);
     return (
         <section className={styles.container}>
             <div className={styles.card}>
@@ -26,7 +28,8 @@ function InnovationEvent({ event , sidebar}) {
                     <div className={styles.innovator}>
                         <img
                             className={styles.innovatorImage}
-                            src={event.image.url || 'tedxcmu-logo.svg'} 
+                            src={event.body[0].primary.person_image.url || 'tedxcmu-logo.svg'}
+                            alt={event.body[0].primary.person_image.alt || 'Headshot'}
                         />
                         <div>
                             <p className={eventStyles.speakerName}>
@@ -37,6 +40,13 @@ function InnovationEvent({ event , sidebar}) {
                             </p>
                         </div>
                     </div>
+                    {event.links.map((external) => (
+                        <Link href={external.link.url} key={external.link.url}>
+                            <a className={styles.link} target="_blank" rel="noopener noreferrer">
+                                {external.text}
+                            </a>
+                        </Link>
+                    ))}
                 </div>
             </div>
         </section>
@@ -44,4 +54,4 @@ function InnovationEvent({ event , sidebar}) {
     )
 }
 
-export default InnovationEvent;
+export default Innovator;
