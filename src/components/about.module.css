@@ -1,81 +1,76 @@
 .container {
-  margin: 8.2rem 6.7rem;
+    margin: 8.2rem 6.7rem;
 }
 
-/* temporary header css */
 .header {
-  margin-bottom: 2.4rem;
-  font-family: PPHatton;
-  font-size: 4.8rem;
-  text-transform: uppercase;
-  color: var(--c-off-white-2);
-  opacity: 90%;
+    margin-bottom: 2.4rem;
+    font-family: PPHatton;
+    font-size: 4.8rem;
+    text-transform: uppercase;
+    color: var(--c-off-white-2);
+    opacity: 90%;
 }
 
-.cardWrapper {
-  border: 1px solid var(--c-gray-3);
-  border-radius: 25px;
-  display: flex;
-  flex-flow: row nowrap;
-  margin-bottom: 2rem;
+.card {
+    display: flex;
+    border: 0.1rem solid var(--c-gray-3);
+    border-radius: 2.5rem;
+    margin-bottom: 2rem;
 }
 
-.aboutText {
-  width: 50%;
-  padding: 5rem;
-  border-right: 1px solid var(--c-gray-3);
-  font-family: 'Helvetica Neue', sans-serif;
+.content {
+    padding: 4rem;
+    border-right: 0.1rem solid var(--c-gray-3);
+    font-size: 1.8rem;
+    opacity: 90%;
 }
 
-.aboutText p {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: var(--c-off-white-2);
-  opacity: 90%;
+.text:first-child {
+    margin-bottom: 1rem;
 }
 
 .links {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
 }
 
-.tedButton {
-  border: 1px solid var(--c-gray-3);
-  font-size: 1.2rem;
-  display: inline-block;
-  padding: 1.5rem 3.5rem 1.5rem 3.5rem;
-  border-radius: 25px;
-  color: var(--c-gray-3);
+.button {
+    display: inline-block;
+    margin-right: 2rem;
+    padding: 1.5rem 3.5rem;
+    font-size: 1.2rem;
+    border: 0.1rem solid var(--c-gray-3);
+    border-radius: 2.5rem;
+    color: var(--c-gray-3);
 }
 
-.socials-wrapper {
-  display: inline-flex;
-  flex-flow: row nowrap;
-  gap: 1rem;
+.icon {
+    margin-right: 1rem;
 }
 
-.aboutImg {
-  width: 50%;
+.image {
+    height: 100%;
+    width: auto;
 }
 
-.aboutImg img {
-  width: 30%;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
+@media screen and (max-width: 812px) {
+    .container {
+        margin: 3rem;
+    }
 
-@media (max-width: 767px) {
-  .aboutImg {
-    display: none;
-  }
+    .card {
+        flex-direction: column;
+    }
 
-  .aboutText {
-    border: none;
-    width: 100%;
-  }  
+    .content {
+        padding: 3rem;
+        border-right: none;
+        border-bottom: 0.1rem solid var(--c-gray-3);
+    }
+
+    .image {
+        height: auto;
+        width: 100%;
+    }
 }

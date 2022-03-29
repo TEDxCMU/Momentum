@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: 200;
     font-display: swap;
-    src: url("/PPHatton/PPHatton-Ultralight.otf") format("opentype");
+    src: url("/fonts/PPHatton/PPHatton-Ultralight.otf") format("opentype");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
     font-style: normal;
     font-weight: 300;
     font-display: swap;
-    src: url("/PPHatton/PPHatton-Light.otf") format("opentype");
+    src: url("/fonts/PPHatton/PPHatton-Light.otf") format("opentype");
 }
 
 @font-face {
@@ -19,7 +19,7 @@
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-    src: url("/PPHatton/PPHatton-Medium.otf") format("opentype");
+    src: url("/fonts/PPHatton/PPHatton-Medium.otf") format("opentype");
 }
 
 @font-face {
@@ -27,7 +27,7 @@
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url("/PPHatton/PPHatton-Bold.otf") format("opentype");
+    src: url("/fonts/PPHatton/PPHatton-Bold.otf") format("opentype");
 }
 
 :root {
