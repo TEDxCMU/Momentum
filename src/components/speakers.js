@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react';
 import { getSpeakers } from 'utils/content';
+import Background from 'components/background';
 import SpeakersGrid from 'components/speakers-grid';
 import styles from 'components/speakers.module.css';
-import BGLeft from 'assets/speakers/speaker-bg-1.svg';
-import BGRight from 'assets/speakers/speaker-bg-2.svg';
 
 function Speakers() {
     const [data, setData] = useState(null);
@@ -19,10 +18,7 @@ function Speakers() {
 
     return (
         <>
-            <div className={styles.background}>
-                <BGLeft />
-                <BGRight className={styles.backgroundRight} />
-            </div>
+            <Background />
             <main className={styles.container}>
                 <h1 className={styles.header}>
                     Speakers

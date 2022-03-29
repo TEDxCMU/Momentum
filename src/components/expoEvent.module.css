@@ -3,11 +3,14 @@
 }
 
 .card {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    background-color: var(--c-black);
     border: 0.1rem solid var(--c-off-white-2);
     border-radius: 1rem;
     overflow: hidden;
+    z-index: 1;
 }
 
 .cardVideo {

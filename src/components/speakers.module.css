@@ -11,23 +11,6 @@
     opacity: 90%;
 }
 
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    pointer-events: none;
-    overflow: hidden;
-}
-
-.backgroundRight {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 65vw;
-}
-
 @media screen and (max-width: 812px) {
     .container {
         margin: 3rem;
