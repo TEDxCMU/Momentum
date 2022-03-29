@@ -1,0 +1,17 @@
+.cardImage {
+    /* grid-column: 8 9; */
+    width: 100%;
+    object-fit: cover;
+    
+}
+.cardContent {
+    grid-column: 8;
+    border-left: 0.1rem solid var(--c-white);
+}
+
+.cardTitle {
+    font-family: PPHatton;
+    font-weight: 500;
+    font-size: 3.6rem;
+    padding: 2rem;
+}

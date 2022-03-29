@@ -1,27 +1,36 @@
 .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem;
-  border-bottom: 0.1rem solid var(--c-white);
-  background-color: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(4rem);
-  z-index: 1;
-  overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6.7rem;
+    border-bottom: 0.1rem solid var(--c-white);
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4rem);
+    z-index: 1;
 }
 
 .logo {
-  height: 3rem;
+    height: 3rem;
 }
 
 .links {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .link {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .link:not(:last-child) {
-  margin-right: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 812px) {
+    .container {
+        padding: 3rem;
+    }
+
+    .links {
+        display: none;
+    }
 }

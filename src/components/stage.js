@@ -1,5 +1,6 @@
 import cn from 'classnames';
 import styles from 'components/stage.module.css';
+import Schedule from 'components/schedule';
 
 function Stage() {
     return (
@@ -14,14 +15,18 @@ function Stage() {
                     title="Main Stage"
                     width='100%'
                 />
-                <h2 className={cn(styles.heading, styles.inline)}>
-                    Main Stage
-                </h2>
+                <div className={styles.bottomPanel}>
+                    <h2 className={cn(styles.heading, styles.inline)}>
+                        Main Stage
+                    </h2>
+                    <img className={styles.graphics} src="assets/stage.svg" alt="Row of Momentum Graphics" />
+                </div>
             </section>
             <section className={styles.rightPanel}>
                 <h2 className={styles.heading}>
                     Main Stage
                 </h2>
+                <Schedule sidebar />
             </section>
         </main>
     );

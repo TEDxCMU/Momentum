@@ -1,0 +1,76 @@
+.container {
+    margin: 8.2rem 6.7rem;
+}
+
+.header {
+    margin-bottom: 2.4rem;
+    font-family: PPHatton;
+    font-size: 4.8rem;
+    text-transform: uppercase;
+    color: var(--c-off-white-2);
+    opacity: 90%;
+}
+
+.card {
+    display: flex;
+    border: 0.1rem solid var(--c-gray-3);
+    border-radius: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.content {
+    padding: 4rem;
+    border-right: 0.1rem solid var(--c-gray-3);
+    font-size: 1.8rem;
+    opacity: 90%;
+}
+
+.text:first-child {
+    margin-bottom: 1rem;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.button {
+    display: inline-block;
+    margin-right: 2rem;
+    padding: 1.5rem 3.5rem;
+    font-size: 1.2rem;
+    border: 0.1rem solid var(--c-gray-3);
+    border-radius: 2.5rem;
+    color: var(--c-gray-3);
+}
+
+.icon {
+    margin-right: 1rem;
+}
+
+.image {
+    height: 100%;
+    width: auto;
+}
+
+@media screen and (max-width: 812px) {
+    .container {
+        margin: 3rem;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .content {
+        padding: 3rem;
+        border-right: none;
+        border-bottom: 0.1rem solid var(--c-gray-3);
+    }
+
+    .image {
+        height: auto;
+        width: 100%;
+    }
+}
