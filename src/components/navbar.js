@@ -49,7 +49,17 @@ function NavBar() {
                         About
                     </a>
                 </Link>
+                <Link href="https://tinyurl.com/tedxcmu2022">
+                    <a className={styles.button} target="_blank" rel="noopener noreferrer">
+                        Purchase Tickets
+                    </a>
+                </Link>
             </div>
+            <Link href="https://tinyurl.com/tedxcmu2022">
+                <a className={styles.button} target="_blank" rel="noopener noreferrer">
+                    Purchase Tickets
+                </a>
+            </Link>
             <Menu parent={parentRef} items={itemsRef} />
         </nav>
     );
