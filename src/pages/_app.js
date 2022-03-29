@@ -7,9 +7,8 @@ function MyApp({ Component, pageProps }) {
 
     return (
         <>
-            {router.pathname !== '/' && <NavBar />}
+            <NavBar />
             <Component {...pageProps} />
-            {router.pathname === '/' && <NavBar />}
         </>
     );
 }

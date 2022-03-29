@@ -2,8 +2,8 @@ import { getSpeakers } from 'utils/content';
 import SpeakersGrid from 'components/speakers-grid';
 import SpeakerSection from 'components/speaker-section';
 import styles from 'components/speakers.module.css';
-import BGLeft from 'assets/speaker_background/speaker_bg-1.svg';
-import BGRight from 'assets/speaker_background/speaker_bg-2.svg';
+import BGLeft from 'assets/speakers/speaker-bg-1.svg';
+import BGRight from 'assets/speakers/speaker-bg-2.svg';
 
 export default function SpeakerPage({ speakers, speaker }) {
     return (

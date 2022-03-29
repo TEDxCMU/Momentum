@@ -71,6 +71,8 @@ body, #__next {
     box-sizing: border-box;
     background-color: var(--c-black);
     color: var(--c-white);
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 a {
