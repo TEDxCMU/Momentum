@@ -1,0 +1,81 @@
+.container {
+  margin: 8.2rem 6.7rem;
+}
+
+/* temporary header css */
+.header {
+  margin-bottom: 2.4rem;
+  font-family: PPHatton;
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  color: var(--c-off-white-2);
+  opacity: 90%;
+}
+
+.cardWrapper {
+  border: 1px solid var(--c-gray-3);
+  border-radius: 25px;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 2rem;
+}
+
+.aboutText {
+  width: 50%;
+  padding: 5rem;
+  border-right: 1px solid var(--c-gray-3);
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.aboutText p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--c-off-white-2);
+  opacity: 90%;
+}
+
+.links {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.tedButton {
+  border: 1px solid var(--c-gray-3);
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 1.5rem 3.5rem 1.5rem 3.5rem;
+  border-radius: 25px;
+  color: var(--c-gray-3);
+}
+
+.socials-wrapper {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+}
+
+.aboutImg {
+  width: 50%;
+}
+
+.aboutImg img {
+  width: 30%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+  .aboutImg {
+    display: none;
+  }
+
+  .aboutText {
+    border: none;
+    width: 100%;
+  }  
+}

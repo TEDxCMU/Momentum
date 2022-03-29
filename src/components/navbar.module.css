@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 6.7rem;
     border-bottom: 0.1rem solid var(--c-white);
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(4rem);
@@ -23,4 +23,14 @@
 
 .link:not(:last-child) {
     margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 812px) {
+    .container {
+        padding: 3rem;
+    }
+
+    .links {
+        display: none;
+    }
 }
