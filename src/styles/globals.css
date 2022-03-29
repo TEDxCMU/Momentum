@@ -36,10 +36,22 @@
     --c-off-white: #C4C4C4;
     --c-off-white-2: #E5E5E6;
     --c-gray: #474747;
+    --c-gray-2: #cecece;
     --c-gray-3: #828282;
+    --c-off-black: #020202;
 
     /* schedule css */
     --eventbox-height: 500px;
+
+    --space: 4px;
+    --space-2x: 8px;
+    --space-3x: 12px;
+    --space-4x: 16px;
+    --space-6x: 24px;
+    --space-8x: 32px;
+    --space-12x: 48px;
+    --space-16x: 64px;
+    --space-32x: 128px;
 }
 
 *, *::before, *::after {
@@ -71,13 +83,6 @@ a {
 a:hover {
     opacity: 0.5;
 }
-
-@font-face {
-    font-family: "PPHatton-Light";
-    src: local("PPHatton-Light"),
-      url("../fonts/PPHatton-Light.woff") format("woff");
-    font-weight: normal;
-  }
 
 @media screen and (max-width: 812px) {
     html {
