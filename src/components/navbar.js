@@ -1,15 +1,18 @@
 import { useRef } from 'react';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
+import cn from 'classnames';
 import Menu from 'components/menu';
 import styles from 'components/navbar.module.css';
 import Logo from 'assets/tedxcmu-logo.svg';
 
 function NavBar() {
+    const router = useRouter();
     const parentRef = useRef(null);
     const itemsRef = useRef(null);
 
     return (
-        <nav ref={parentRef} className={styles.container}>
+        <nav ref={parentRef} className={cn(styles.container, { [styles.fixedContainer]: router.pathname === '/' })}>
             <Link href="/">
                 <a>
                     <Logo className={styles.logo} />
