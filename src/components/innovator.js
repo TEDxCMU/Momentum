@@ -6,7 +6,6 @@ import styles from 'components/innovator.module.css';
 import logo from 'assets/tedxcmu-logo.svg';
 
 function Innovator({ event }) {
-    console.log(event);
     return (
         <section className={styles.container}>
             <div className={styles.card}>
