@@ -20,11 +20,9 @@ function Expo({ sidebar }) {
 
     return (
         <main className={styles.container}>
-            
             <h1 className={styles.header}>
                 Innovation Expo
             </h1>
-            
             {data.map((event) => (
                 <Event
                     key={event.id}
