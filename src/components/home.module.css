@@ -29,8 +29,9 @@
 }
 
 .heading {
+    font-family: PPHatton;
     font-weight: 300;
-    font-size: 10vw;
+    font-size: 9.2vw;
     line-height: 124px;
     opacity: 100%;
     width: 100%;
@@ -65,7 +66,8 @@
         top: 12rem;
         left: 12rem;
         display: block;
-        font-weight: 200;
+        font-family: PPHatton;
+        font-weight: 300;
         font-size: 12rem;
         width: 100%;
         transform: rotate(90deg);
