@@ -5,11 +5,9 @@ import expoStyles from 'components/expoEvent.module.css'
 import logo from 'assets/tedxcmu-logo.svg';
 
 function InnovationEvent({ event , sidebar}) {
-    console.log(event.data)
     return (
         <section className={eventStyles.container}>
             <div className={eventStyles.card}>
-                
                 <div className={expoStyles.cardContent}>
                     <div className={expoStyles.cardImage}>
                         <img src={event.image.url || 'tedxcmu-logo.svg'}></img>
@@ -23,7 +21,6 @@ function InnovationEvent({ event , sidebar}) {
                             className={eventStyles.speakerImage}
                             src={event.image.url || 'tedxcmu-logo.svg'} 
                         />
-                            
                         <div>
                             <p className={eventStyles.speakerName}>
                                 {event.body[0].primary.person_name}
@@ -34,9 +31,7 @@ function InnovationEvent({ event , sidebar}) {
                         </div>
                     </div>
                 </div>
-                
             </div>
-            
         </section>
         
     )

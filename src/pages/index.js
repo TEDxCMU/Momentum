@@ -7,7 +7,7 @@ function Home() {
     const clicked = useRef(false);
     // width, height, top, left
     var dimensionArray = [[2289.43, 1797.36, 142.06, 2223.4], [1263.81, 1486.9, -427.26, 336.84], [1226.88, 869.04, 177.09, -50], [1180.37, 1041.85, 1011.36, 324.88], [1448.71, 1722.85, 507.03, 1452.29], [1297.62, 1157.84, -545, 471.65]];
-    var colorArray = ["#C1FFBF", "#FF2F54", "#FF8A00", "#4A5CFF", "#E370DF"]
+    var colorArray = ['#C1FFBF', '#FF2F54', '#FF8A00', '#4A5CFF', '#E370DF']
 
     const changeImageColor = (color) => {
         var svg = document.getElementById("color-change-svg").contentDocument;

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import cn from 'classnames';
 import { parseISO, format } from 'date-fns';
 import styles from 'components/event.module.css';
@@ -20,22 +21,24 @@ function Event({ event, sidebar }) {
                         {event.title}
                     </p>
                     {event.speaker.data && (
-                        <div className={styles.speaker}>
-                            {!sidebar && (
-                                <img
-                                    className={styles.speakerImage}
-                                    src={event.speaker.data.image.url || 'tedxcmu-logo.svg'}
-                                />
-                            )}
-                            <div>
-                                <p className={styles.speakerName}>
-                                    {event.speaker.data.name}
-                                </p>
-                                <p className={styles.speakerTitle}>
-                                    {event.speaker.data.title}
-                                </p>
-                            </div>
-                        </div>
+                        <Link href={`/speakers/${event.speaker.uid}`}>
+                            <a className={styles.speaker}>
+                                {!sidebar && (
+                                    <img
+                                        className={styles.speakerImage}
+                                        src={event.speaker.data.image.url || 'tedxcmu-logo.svg'}
+                                    />
+                                )}
+                                <div>
+                                    <p className={styles.speakerName}>
+                                        {event.speaker.data.name}
+                                    </p>
+                                    <p className={styles.speakerTitle}>
+                                        {event.speaker.data.title}
+                                    </p>
+                                </div>
+                            </a>
+                        </Link>
                     )}
                     {event.description && !sidebar && (
                         <p className={cn(styles.cardDescription, { [styles.sidebarCardDescription]: sidebar })}>

@@ -1,52 +1,54 @@
-import Layout from "components/layout";
-import SpeakersGrid from "components/speakers-grid";
-import SpeakerSection from "components/speaker-section";
-import styles from "../speakers.module.css";
-import { getSpeakers } from "utils/content";
-import BGLeft from "assets/speaker_background/speaker_bg-1.svg";
-import BGRight from "assets/speaker_background/speaker_bg-2.svg";
+import { getSpeakers } from 'utils/content';
+import SpeakersGrid from 'components/speakers-grid';
+import SpeakerSection from 'components/speaker-section';
+import styles from 'components/speakers.module.css';
+import BGLeft from 'assets/speaker_background/speaker_bg-1.svg';
+import BGRight from 'assets/speaker_background/speaker_bg-2.svg';
 
 export default function SpeakerPage({ speakers, speaker }) {
-  return (
-    <>
-      <div className={styles.bgContainer}>
-        <BGLeft />
-        <BGRight className={styles.bgRight} />
-      </div>
-      <Layout title="speakers">
-        <SpeakersGrid speakers={speakers} />
-      </Layout>
-      <SpeakerSection speaker={speaker.data} />
-    </>
-  );
+    return (
+        <>
+            <div className={styles.background}>
+                <BGLeft />
+                <BGRight className={styles.backgroundRight} />
+            </div>
+            <main className={styles.container}>
+                <h1 className={styles.header}>
+                    Speakers
+                </h1>
+                <SpeakersGrid speakers={speakers} />
+            </main>
+            <SpeakerSection speaker={speaker.data} />
+        </>
+    );
 }
 
 export async function getStaticProps({ params }) {
-  const slug = params?.slug;
-  const speakers = await getSpeakers();
-  const speaker = speakers.find((s) => s.uid === slug) || null;
+    const slug = params?.slug;
+    const speakers = await getSpeakers();
+    const speaker = speakers.find((s) => s.uid === slug) || null;
 
-  if (!speaker) {
+    if (!speaker) {
+        return {
+            notFound: true,
+        };
+    }
+
     return {
-      notFound: true,
+        props: {
+            speakers,
+            speaker,
+        },
+        revalidate: 60,
     };
-  }
-
-  return {
-    props: {
-      speakers,
-      speaker,
-    },
-    revalidate: 60,
-  };
 }
 
 export async function getStaticPaths() {
-  const speakers = await getSpeakers();
-  const slugs = speakers.map((s) => ({ params: { slug: s.uid } }));
+    const speakers = await getSpeakers();
+    const slugs = speakers.map((s) => ({ params: { slug: s.uid } }));
 
-  return {
-    paths: slugs,
-    fallback: false,
-  };
+    return {
+        paths: slugs,
+        fallback: false,
+    };
 }
