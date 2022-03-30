@@ -11,7 +11,7 @@ function Stage() {
                     allow='autoplay; picture-in-picture'
                     allowFullScreen
                     frameBorder='0'
-                    src="https://youtube.com/embed/RPsJRCHiIsA?autoplay=1&mute=1"
+                    src="https://mediaservices.cmu.edu/embed/secure/iframe/entryId/1_o0zmugn8/uiConfId/32384181/st/0"
                     title="Main Stage"
                     width='100%'
                 />
