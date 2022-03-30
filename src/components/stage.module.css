@@ -62,8 +62,12 @@
         min-height: 40vh;
     }
 
+    .leftPanel {
+        height: auto;
+    }
+
     .rightPanel {
-        min-height: 53vh;
+        min-height: auto;
     }
 
     .bottomPanel {
