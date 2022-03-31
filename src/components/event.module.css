@@ -32,13 +32,14 @@
     font-family: PPHatton;
     font-weight: 500;
     font-size: 3.6rem;
+    text-transform: uppercase;
     padding: 2rem 2rem 1.8rem 2rem;
     color: var(--c-off-white-2);
     opacity: 90%;
 }
 
 .sidebarCardTitle {
-    font-size: 2.6rem;
+    font-size: 2.2rem;
 }
 
 .cardTitle:not(:last-child) {
@@ -55,7 +56,7 @@
 
 .cardDescription {
     max-width: 60%;
-    padding: 2rem 3rem 3rem 3rem;
+    padding: 2rem;
     padding-top: 0;
     font-size: 1.6rem;
     color: var(--c-off-white-2);
@@ -70,14 +71,14 @@
     display: inline-flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 2rem 3rem 2rem 3rem;
+    padding: 2rem;
     font-size: 1.8rem;
 }
 
 .speakerImage {
     width: 4.6rem;
     height: 4.6rem;
-    margin-right: 0.8rem;
+    margin-right: 1.5rem;
     border-radius: 50%;
     object-fit: cover;
 }

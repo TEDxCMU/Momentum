@@ -15,132 +15,128 @@
  */
 
 .grid {
-  margin: 40px auto;
-  padding: 0;
-  width: 100%;
-  min-width: 300px;
-  display: grid;
-  grid-template-columns: repeat(3, 32.33%);
-  gap: 1.5%;
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+    margin: 40px auto;
+    padding: 0;
+    width: 100%;
+    min-width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 32.33%);
+    gap: 1.5%;
 }
 
 @media (max-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(2, 49.25%);
-    gap: 1.5%;
-  }
+    .grid {
+        grid-template-columns: repeat(2, 49.25%);
+        gap: 1.5%;
+    }
 }
 
 @media (max-width: 471px) {
-  .grid {
-    display: flex;
-    flex-direction: column;
-  }
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .grid::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .card {
-  color: inherit;
-  display: block;
-  border-radius: var(--space-2x);
-  border: 1px solid #333333;
-  transition: border 0.3s;
-  position: relative;
-  background-color: var(--c-off-black);
+    color: inherit;
+    display: block;
+    border-radius: var(--space-2x);
+    border: 0.1rem solid #333333;
+    transition: border 0.3s;
+    position: relative;
+    background-color: var(--c-off-black);
 }
 
-.card:hover,
-.card:focus {
-  border: 0.7px solid white;
-  opacity: 1;
+.card:hover, .card:focus {
+    border: 0.7px solid white;
+    opacity: 1;
 }
 
 .cardBody {
-  padding: var(--space-6x);
-  color: var(--secondary-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  /* height: 100%; */
+    padding: var(--space-6x);
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .imageWrapper {
-  height: 23vw;
-  position: relative;
+    height: 23vw;
+    position: relative;
 }
 
 @media (max-width: 768px) {
-  .imageWrapper {
-    height: 40vw;
-    position: relative;
-  }
+    .imageWrapper {
+        height: 40vw;
+        position: relative;
+    }
 }
 
 @media (max-width: 471px) {
-  .imageWrapper {
-    height: 80vw;
-    position: relative;
-  }
+    .imageWrapper {
+        height: 80vw;
+        position: relative;
+    }
 }
 
 .image {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  opacity: 0.9;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    opacity: 0.9;
 }
 
 @media (max-width: 471px) {
-  .imageWrapper > div {
-    width: 100% !important;
-  }
-  .card {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 24px;
-  }
-  .grid {
-    display: flex;
-    flex-direction: column;
-  }
+    .imageWrapper > div {
+        width: 100% !important;
+    }
+    
+    .card {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+    
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .name {
-  font-family: "PPHatton";
-  letter-spacing: -0.07em;
-  text-transform: capitalize;
-  color: var(--c-gray-2);
-  font-size: 24px;
-  font-weight: 400;
-  margin: 0;
-  line-height: 1.4;
+    font-family: "PPHatton";
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: var(--c-gray-2);
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.4;
 }
 
 .tagline {
-  font-family: "Helvetica Neue";
-  font-size: 20px;
-  margin: 0;
-  line-height: 1.3em;
-  color: var(--c-gray-3);
-  font-weight: 400;
-  padding-bottom: var(--space-12x);
+    font-family: "Helvetica Neue";
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.3em;
+    color: var(--c-gray-3);
+    font-weight: 400;
+    padding-bottom: var(--space-12x);
 }
 
 .index {
-  font-family: "PPHatton";
-  font-weight: 500;
-  font-size: 20px;
-  float: right;
-  position: absolute;
-  bottom: var(--space-6x);
-  right: var(--space-6x);
+    font-family: "PPHatton";
+    font-weight: 500;
+    font-size: 20px;
+    float: right;
+    position: absolute;
+    bottom: var(--space-6x);
+    right: var(--space-6x);
 }

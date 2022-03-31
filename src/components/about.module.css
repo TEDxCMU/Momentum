@@ -1,5 +1,6 @@
 .container {
-    margin: 8.2rem 6.7rem;
+    margin: 8.2rem auto;
+    max-width: 120rem;
 }
 
 .header {
@@ -22,6 +23,9 @@
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 4rem;
     border-right: 0.1rem solid var(--c-gray-3);
     font-size: 1.8rem;
@@ -30,6 +34,11 @@
 
 .text:first-child {
     margin-bottom: 1rem;
+}
+
+.text {
+    font-weight: 300;
+    line-height: 135%;
 }
 
 .links {
@@ -63,13 +72,13 @@
     }
 
     .card {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .content {
         padding: 3rem;
         border-right: none;
-        border-bottom: 0.1rem solid var(--c-gray-3);
+        border-top: 0.1rem solid var(--c-gray-3);
     }
 
     .image {

@@ -9,11 +9,9 @@ function Innovator({ event }) {
     return (
         <section className={styles.container}>
             <div className={styles.card}>
-                <img
-                    className={styles.cardVideo}
-                    src="assets/expo/filler.png"
-                    alt="Filler Video"
-                />
+                <div className={styles.cardFiller}>
+                    <p>Stay Tuned</p>
+                </div>
                 <div className={styles.cardContent}>
                     <img
                         className={styles.cardImage}
@@ -23,7 +21,6 @@ function Innovator({ event }) {
                     <p className={styles.cardTitle}>
                         {event.name}
                     </p>
-                    <p className={styles.cardDescription}>{event.description}</p>   
                     <div className={styles.innovator}>
                         <img
                             className={styles.innovatorImage}
@@ -39,6 +36,7 @@ function Innovator({ event }) {
                             </p>
                         </div>
                     </div>
+                    <p className={styles.cardDescription}>{event.description}</p>   
                     {event.links.map((external) => (
                         <Link href={external.link.url} key={external.link.url}>
                             <a className={styles.link} target="_blank" rel="noopener noreferrer">

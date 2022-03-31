@@ -1,7 +1,7 @@
 .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    height: 92vh;
+    height: 91vh;
 }
 
 .leftPanel {
@@ -14,13 +14,19 @@
 .rightPanel {
     grid-column: span 3;
     border: 0.1rem solid var(--c-white);
+    border-top: none;
     overflow-y: auto;
+}
+
+.rightHeading {
+    margin-left: 3rem;
+    margin-top: 4rem;
 }
 
 .bottomPanel {
     margin: 2rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     overflow: hidden;
 }
@@ -33,7 +39,6 @@
     margin-top: 2rem;
     font-family: PPHatton;
     font-size: 4rem;
-    text-align: center;
     text-transform: uppercase;
     color: var(--c-off-white);
 }
@@ -68,6 +73,7 @@
 
     .rightPanel {
         min-height: auto;
+        border-top: 0.1rem solid var(--c-white);
     }
 
     .bottomPanel {

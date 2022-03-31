@@ -18,25 +18,27 @@
 .content {
     z-index: 1;
     position: absolute;
-    bottom: 4rem;
+    bottom: 0rem;
 }
 
 .details {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 3rem;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 .heading {
-    font-family: PPHatton;
-    font-weight: 300;
-    font-size: 9.2vw;
-    line-height: 124px;
+    font-size: 10.6vw;
     opacity: 100%;
     width: 100%;
     animation: glow 1s ease-in-out infinite alternate;
+}
+
+.heading h1 {
+    font-family: PPHatton;
+    font-weight: 300;
+    line-height: 60%;
 }
 
 .verticalHeadline {
@@ -65,7 +67,7 @@
     .verticalHeadline {
         position: fixed;
         top: 12rem;
-        left: 12rem;
+        left: 14rem;
         display: block;
         font-family: PPHatton;
         font-weight: 300;
@@ -84,6 +86,7 @@
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 0;
+        padding: 0 3rem;
     }
 
     .image {

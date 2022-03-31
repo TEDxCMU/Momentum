@@ -8,9 +8,23 @@
     overflow: hidden;
 }
 
+.backgroundOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(0.2rem);
+    z-index: 2;
+}
+
 .backgroundRight {
     position: absolute;
     bottom: 0;
     right: 0;
     width: 65vw;
+    z-index: 1;
 }

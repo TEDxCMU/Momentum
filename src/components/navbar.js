@@ -15,37 +15,39 @@ function NavBar() {
         <nav ref={parentRef} className={cn(styles.container, { [styles.fixedContainer]: router.pathname === '/' })}>
             <Link href="/">
                 <a>
-                    <Logo className={styles.logo} />
+                    <span className={styles.logo}>
+                        <Logo />
+                    </span>
                 </a>
             </Link>
             <div ref={itemsRef} className={styles.links}>
                 <Link href="/">
-                    <a className={styles.link}>
+                    <a className={cn(styles.link, { [styles.active]: router.pathname === '/' })}>
                         Home
                     </a>
                 </Link>
                 <Link href="/stage">
-                    <a className={styles.link}>
+                    <a className={cn(styles.link, { [styles.active]: router.pathname === '/stage' })}>
                         Stage
                     </a>
                 </Link>
                 <Link href="/schedule">
-                    <a className={styles.link}>
+                    <a className={cn(styles.link, { [styles.active]: router.pathname === '/schedule' })}>
                         Schedule
                     </a>
                 </Link>
                 <Link href="/speakers">
-                    <a className={styles.link}>
+                    <a className={cn(styles.link, { [styles.active]: router.pathname === '/speakers' })}>
                         Speakers
                     </a>
                 </Link>
                 <Link href="/expo">
-                    <a className={styles.link}>
+                    <a className={cn(styles.link, { [styles.active]: router.pathname === '/expo' })}>
                         Innovation Expo
                     </a>
                 </Link>
                 <Link href="/about">
-                    <a className={styles.link}>
+                    <a className={cn(styles.link, { [styles.active]: router.pathname === '/about' })}>
                         About
                     </a>
                 </Link>

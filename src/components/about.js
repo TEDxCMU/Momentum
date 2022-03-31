@@ -7,19 +7,20 @@ import styles from 'components/about.module.css';
 function About() {
     return (
         <>
-            <Background />
             <main className={styles.container}>
                 <h1 className={styles.header}>
                     About
                 </h1>
                 <section className={styles.card}>
                     <div className={styles.content}>
-                        <p className={styles.text}>
-                            Momentum is what drives something still into an unstoppable force of motion, power, energy and most importantly, change. It fuels motivation, defies stagnancy and demands the spurring of action. People who are constantly in momentum are those that make change, those that pursue something more and those that see in the world the potential for something better.
-                        </p>
-                        <p className={styles.text}>
-                            Momentum pushes us to keep moving in spite of the challenges we face. TEDxCMU Momentum hopes to teach the power of striving for more and taking the step that allows momentum to thrive—the first one forward.
-                        </p>
+                        <div>
+                            <p className={styles.text}>
+                                Momentum is what drives something still into an unstoppable force of motion, power, energy and most importantly, change. It fuels motivation, defies stagnancy and demands the spurring of action. People who are constantly in momentum are those that make change, those that pursue something more and those that see in the world the potential for something better.
+                            </p>
+                            <p className={styles.text}>
+                                Momentum pushes us to keep moving in spite of the challenges we face. TEDxCMU Momentum hopes to teach the power of striving for more and taking the step that allows momentum to thrive—the first one forward.
+                            </p>
+                        </div>
                         <div className={styles.links}>
                             <Link href="https://www.tedxcmu.org">
                                 <a className={styles.button} target="_blank" rel="noopener noreferrer">

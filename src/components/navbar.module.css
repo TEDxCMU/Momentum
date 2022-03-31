@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     min-height: 0;
-    padding: 2rem 6.7rem;
+    padding: 2rem;
     border-bottom: 0.1rem solid var(--c-white);
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(4rem);
@@ -13,7 +13,10 @@
 }
 
 .logo {
+    display: inline-flex;
+    justify-content: flex-start;
     height: 3rem;
+    width: 20rem;
 }
 
 .links {
@@ -22,6 +25,15 @@
 
 .link {
     font-size: 1.5rem;
+    opacity: 0.5;
+}
+
+.link:hover {
+    opacity: 1;
+}
+
+.active {
+    opacity: 1;
 }
 
 .link:not(:last-child) {
@@ -33,6 +45,7 @@
 }
 
 .button {
+    width: 20rem;
     padding: 0.8rem 2rem;
     border: 0.1rem solid var(--c-white);
     border-radius: 6rem;
@@ -57,6 +70,7 @@
 
     .button {
         display: none;
+        width: auto;
     }
 
     .links .button {

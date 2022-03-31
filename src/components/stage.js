@@ -19,12 +19,11 @@ function Stage() {
                     <h2 className={cn(styles.heading, styles.inline)}>
                         Main Stage
                     </h2>
-                    <img className={styles.graphics} src="assets/stage.svg" alt="Row of Momentum Graphics" />
                 </div>
             </section>
             <section className={styles.rightPanel}>
-                <h2 className={styles.heading}>
-                    Main Stage
+                <h2 className={cn(styles.heading, styles.rightHeading)}>
+                    Schedule
                 </h2>
                 <Schedule sidebar />
             </section>

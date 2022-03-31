@@ -13,11 +13,16 @@
     z-index: 1;
 }
 
-.cardVideo {
+.cardFiller {
     grid-column: 1 / 8;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    object-fit: contain;
+    font-family: PPHatton;
+    font-weight: 500;
+    font-size: 6rem;
+    text-transform: uppercase;
 }
 
 .cardImage {
@@ -41,8 +46,7 @@
     padding: 2rem;
     padding-top: 0;
     font-size: 1.6rem;
-    color: var(--c-off-white-2);
-    opacity: 50%;
+    color: var(--c-white);
 }
 
 .innovator {
@@ -79,7 +83,7 @@
         flex-direction: column;
     }
 
-    .cardVideo {
+    .cardFiller {
         display: none;
     }
 

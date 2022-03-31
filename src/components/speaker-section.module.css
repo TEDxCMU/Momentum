@@ -28,7 +28,7 @@
     font-family: PPHatton;
     font-size: 36px;
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: uppercase;
     letter-spacing: 0.03em;
     color: var(--c-gray-2);
     line-height: 1.2;
@@ -46,7 +46,7 @@
 .body {
     margin: 0;
     font-size: 15px;
-    color: #828282;
+    color: var(--c-white);
     line-height: 124.5%;
     font-style: normal;
     font-weight: normal;

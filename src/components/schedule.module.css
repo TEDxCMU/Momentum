@@ -1,5 +1,6 @@
 .container {
-    margin: 8.2rem 6.7rem;
+    margin: 8.2rem auto;
+    max-width: 120rem;
 }
 
 .sidebarContainer {
